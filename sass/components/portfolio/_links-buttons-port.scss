@@ -1,0 +1,131 @@
+$portfolio-buttons-font-color: #212121;
+$portfolio-buttons-bg-color: #f5f4fa;
+$portfolio-buttons-hover: #2196f3;
+
+/* Links buttons */
+
+.links-container {
+  margin-bottom: 50px;
+}
+
+.site-nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.site-nav-item {
+  margin-left: 8px;
+}
+
+.site-nav-item:first-child {
+  margin-left: 0;
+}
+
+/* buttons list */
+.button-all {
+  display: inline-block;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+
+  background: $portfolio-buttons-bg-color;
+  color: $portfolio-buttons-font-color;
+
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 6px 22px;
+  min-width: 73px;
+
+  transition: 250ms;
+}
+
+.button-all:hover,
+.button-all:focus {
+  background: $portfolio-buttons-hover;
+}
+
+.button-web {
+  display: inline-block;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+
+  background: $portfolio-buttons-bg-color;
+  color: $portfolio-buttons-font-color;
+
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 6px 22px;
+  min-width: 128px;
+}
+.button-web:hover,
+.button-web:focus {
+  background: $portfolio-buttons-hover;
+}
+
+.button-app {
+  display: inline-block;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+
+  background: $portfolio-buttons-bg-color;
+  color: $portfolio-buttons-font-color;
+
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 6px 22px;
+  min-width: 145px;
+}
+.button-app:hover,
+.button-app:focus {
+  background: $portfolio-buttons-hover;
+}
+
+.button-design {
+  display: inline-block;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+
+  background: $portfolio-buttons-bg-color;
+  color: $portfolio-buttons-font-color;
+
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 6px 22px;
+  min-width: 103px;
+}
+.button-design:hover,
+.button-design:focus {
+  background: $portfolio-buttons-hover;
+}
+
+.button-marketing {
+  display: inline-block;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+
+  background: $portfolio-buttons-bg-color;
+  color: $portfolio-buttons-font-color;
+
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 6px 22px;
+  min-width: 130px;
+}
+.button-marketing:hover,
+.button-marketing:focus {
+  background: $portfolio-buttons-hover;
+}

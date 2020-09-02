@@ -1,0 +1,68 @@
+$font-stack: Roboto, sans-serif;
+$primary-color: #fff;
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack;
+  background-color: $primary-color;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*,
+*:hover,
+*:focus {
+  outline: none;
+}
+
+/* margin-padding top and bottom no */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+/* list style - none */
+ul {
+  list-style-type: none;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+figure {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+/* container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* section */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* portfolio */
+.section-portfolio {
+  padding-top: 93px;
+  padding-bottom: 94px;
+}

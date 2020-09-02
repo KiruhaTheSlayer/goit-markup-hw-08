@@ -1,0 +1,73 @@
+$projects-dis-items-color: #ffffff;
+$projects-dis-items-border-color: #eeeeee;
+$portfolio-title-color: #212121;
+$portfolio-card-description-color: #757575;
+
+/* description */
+.projects-dis-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+.projects-dis-items {
+  position: relative;
+  overflow: hidden;
+
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  background: $projects-dis-items-color;
+  border: 1px solid $projects-dis-items-border-color;
+
+  cursor: pointer;
+
+  transition: 250ms;
+}
+
+.projects-dis-items:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.projects-dis-items:nth-child(3n) {
+  margin-right: 0;
+}
+
+.projects-dis-items:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.projects-dis-items img {
+  max-width: 100%;
+
+  display: block;
+  background-size: cover;
+}
+.tittle-projects-dis {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+
+  color: $portfolio-title-color;
+
+  margin-top: 20px;
+  padding: 0 24px 0;
+}
+
+.card-description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+
+  color: $portfolio-card-description-color;
+
+  margin-top: 4px;
+  margin-bottom: 20px;
+  padding: 0 24px 0;
+}
