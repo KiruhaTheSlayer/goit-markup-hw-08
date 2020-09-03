@@ -25,6 +25,31 @@
               <span class="font--style--black">Studio</span>
             </a>
           </div>
+          <button
+            type="button"
+            class="menu-button is-open"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="mobile-menu-button"
+              aria-label="menu switcher"
+            >
+              <use
+                width="24"
+                height="16"
+                class="icon-menu"
+                xlink:href="./assets/image/sprite2.svg#icon-menu-open"
+              />
+              <use
+                width="19"
+                height="19"
+                class="icon-close-menu"
+                xlink:href="./assets/image/sprite2.svg#icon-menu-close"
+              />
+            </svg>
+          </button>
           <ul class="site-nav">
             <li class="site-nav-items">
               <a class="links studio" href="./index.html">Студия</a>
@@ -196,9 +221,7 @@
       <!--our projects-->
       <section class="our-projects section">
         <div class="container">
-          <h3 class="projects-section-header">
-            Чем мы занимаемся
-          </h3>
+          <h3 class="projects-section-header">Чем мы занимаемся</h3>
           <ul class="projects-list">
             <li class="projects-list-item">
               <img
@@ -206,9 +229,7 @@
                 alt="computer"
                 width="350"
               />
-              <h2 class="projects-description">
-                Десктопные приложения
-              </h2>
+              <h2 class="projects-description">Десктопные приложения</h2>
             </li>
             <li class="projects-list-item">
               <img src="./assets/image/phone.jpg" alt="phone" width="350" />
@@ -216,9 +237,7 @@
             </li>
             <li class="projects-list-item">
               <img src="./assets/image/screen.jpg" alt="screen" width="350" />
-              <h2 class="projects-description">
-                Дизайнерские решения
-              </h2>
+              <h2 class="projects-description">Дизайнерские решения</h2>
             </li>
           </ul>
         </div>
@@ -502,9 +521,7 @@
       <!--Our costomers-->
       <section class="our-costomers section">
         <div class="container">
-          <h3 class="regular-recipients-header">
-            Постоянные клиенты
-          </h3>
+          <h3 class="regular-recipients-header">Постоянные клиенты</h3>
           <ul class="costomers-list">
             <li class="costomers-list-item">
               <a href="#">
@@ -673,5 +690,6 @@
       </div>
     </footer>
     <script src="./assets/js/modal.js"></script>
+    <script src="./assets/js/mobile-modal-menu.js"></script>
   </body>
 </html>

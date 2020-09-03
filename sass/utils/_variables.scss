@@ -17,12 +17,6 @@ body {
   box-sizing: inherit;
 }
 
-*,
-*:hover,
-*:focus {
-  outline: none;
-}
-
 /* margin-padding top and bottom no */
 h1,
 h2,
@@ -49,10 +43,21 @@ figure {
 
 /* container */
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (min-widht: 576px) {
+    width: 576px;
+  }
+
+  @media screen and (min-widht: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-widht: 1200px) {
+    width: 1200px;
+  }
 }
 
 /* section */
@@ -65,4 +70,9 @@ figure {
 .section-portfolio {
   padding-top: 93px;
   padding-bottom: 94px;
+}
+
+.navigation-container {
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
