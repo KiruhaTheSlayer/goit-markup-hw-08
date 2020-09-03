@@ -1,0 +1,75 @@
+/* info section */
+.info-list {
+  //   display: flex;
+  justify-content: center;
+}
+
+.info-list-item {
+  width: 270px;
+}
+
+.info-list-item::before {
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+
+  background: #f5f4fa;
+}
+.info-list-item:nth-child(1)::before {
+  background-image: url(../image/antenna1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info-list-item:nth-child(2)::before {
+  background-image: url(../image/clock1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info-list-item:nth-child(3)::before {
+  background-image: url(../image/diagram1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info-list-item:nth-child(4)::before {
+  background-image: url(../image/astronaut1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info-list-item:nth-child(n + 2) {
+  //   margin-left: 30px;
+}
+.info-list-item h2:nth-child(n + 1) {
+  margin-top: 30px;
+}
+
+.info-section-header {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #212121;
+}
+
+.info-section-font {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+
+  margin-top: 10px;
+}

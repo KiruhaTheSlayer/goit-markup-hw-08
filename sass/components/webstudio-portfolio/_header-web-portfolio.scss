@@ -10,14 +10,15 @@ $email-number-color-fonts-hover: #2196f3;
 $email-number-color-icon-hover: #2196f3;
 
 .main-header {
+  position: relative;
+
   border-bottom: 1px solid #ececec;
+  max-width: 100%;
 }
 
 .logo-style {
-  display: flex;
-  align-items: center;
-
-  min-width: 134px;
+  max-width: 134px;
+  height: 28px;
 }
 
 .font--style--blue {
@@ -42,48 +43,378 @@ $email-number-color-icon-hover: #2196f3;
 
 // mobile button
 .menu-button {
-  display: inline-flex;
+  align-self: center;
+
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
 
+  margin-left: auto;
+
   width: 40px;
   height: 40px;
 
-  margin-left: auto;
-
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
-.menu-button .icon-close-menu {
+.menu-button .icon-menu {
   display: none;
 }
 
-.menu-button.is-open .icon-close-menu {
+.menu-button.is-open .icon-menu {
   display: block;
 }
 
-.menu-button.is-open .icon-menu {
+.menu-button.is-open .icon-close-menu {
   display: none;
 }
 
 .mobile-menu-button {
-  display: flex;
-
   width: 40px;
   height: 40px;
-
-  justify-content: center;
-  align-items: center;
 }
 
-// links
+.mobile-menu-button:hover,
+:focus {
+  fill: #2196f3;
+}
+
+.menu-mobile-container {
+  text-align: center;
+  font-size: 16px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    height: 453px;
+
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+
+    &.is-open {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.navigation {
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    margin-right: auto;
+  }
+}
 
 .site-nav {
-  display: none;
+  @media screen and (max-width: 767px) {
+    justify-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
+.site-nav .site-nav-items:nth-child(n + 2) {
+  @media screen and (min-width: 768px) {
+    margin-left: 50px;
+  }
+}
+
+.nav-links {
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .site-nav-items {
+      margin-bottom: 40px;
+    }
+
+    .site-nav-items:nth-last-child(1) {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.site-nav .links {
+  color: $site-nav-links;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .links {
+  transition: 250ms;
+}
+
+.site-nav .links:hover,
+.site-nav .links:focus,
+.site-nav .links:active {
+  color: $site-nav-links-hover;
+}
+
+.links {
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    display: inline-block;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.studio::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: -29px;
+
+  display: block;
+
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+
+  background-color: #2196f3;
+
+  @media screen and (max-width: 767px) {
+    bottom: -12px;
+  }
+}
+
+.site-nav .site-nav-items .studio {
+  color: #2196f3;
+}
+
+.studio-portfolio::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: -29px;
+
+  display: block;
+
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+
+  background-color: #2196f3;
+
+  transform: scaleY(0%);
+  transform-origin: bottom;
+  transition: transform 250ms;
+
+  @media screen and (max-width: 767px) {
+    bottom: -12px;
+  }
+}
+
+.studio-portfolio:hover::after {
+  transform: scaleY(100%);
+}
+
+.portfolio::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: -29px;
+
+  display: block;
+
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+
+  background-color: #2196f3;
+
+  @media screen and (max-width: 767px) {
+    bottom: -12px;
+  }
+}
+
+.site-nav .site-nav-items .portfolio {
+  color: #2196f3;
+}
+
+.portfolio-studio::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: -29px;
+
+  display: block;
+
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+
+  background-color: #2196f3;
+
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 185ms;
+
+  @media screen and (max-width: 767px) {
+    bottom: -12px;
+  }
+}
+.portfolio-studio:hover::after {
+  transform: scaleY(100%);
+}
+
+.contacts::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: -29px;
+
+  display: block;
+
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+
+  background-color: #2196f3;
+
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 185ms;
+
+  @media screen and (max-width: 767px) {
+    bottom: -12px;
+  }
+}
+.contacts:hover::after {
+  transform: scaleY(100%);
+}
+.contacts:focus::after {
+  transform: scaleY(100%);
+}
+
+/* --------------END Animation---------------- */
+
+/* contacts */
 .our-contacts {
-  display: none;
+  align-items: center;
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    display: inline-block;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+.email--style {
+  display: flex;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: $email-number-color-fonts;
+  fill: $email-number-color-icon;
+
+  transition: 250ms;
+}
+
+.mail-icon-style {
+  width: 16px;
+  height: 11px;
+
+  margin-right: 10px;
+}
+
+.email--style:hover,
+.email--style:focus {
+  color: $email-number-color-fonts-hover;
+  fill: $email-number-color-icon-hover;
+}
+
+.number--style {
+  display: flex;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #757575;
+  fill: #757575;
+
+  transition: 250ms;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 18px;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 2px;
+    margin-top: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+    margin-top: 0;
+  }
+}
+
+.number-icon-style {
+  width: 10px;
+  height: 15px;
+
+  margin-right: 10px;
+}
+
+.number--style:hover,
+.number--style:focus {
+  color: #2196f3;
+  fill: #2196f3;
 }

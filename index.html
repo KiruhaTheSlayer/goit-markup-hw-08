@@ -18,67 +18,75 @@
     <!--logo and nav-->
     <header class="main-header">
       <div class="navigation-container container">
-        <nav class="nav-links">
-          <div class="logo-style">
-            <a href="#" class="logo">
-              <span class="font--style--blue">Web</span>
-              <span class="font--style--black">Studio</span>
+        <div class="logo-style">
+          <a href="#" class="logo">
+            <span class="font--style--blue">Web</span>
+            <span class="font--style--black">Studio</span>
+          </a>
+        </div>
+        <button
+          type="button"
+          class="menu-button is-open"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="mobile-menu-button"
+            aria-label="menu switcher"
+          >
+            <use
+              width="40"
+              height="40"
+              class="icon-close-menu"
+              xlink:href="./assets/image/sprite2.svg#icon-menu-close"
+            />
+            <use
+              width="40"
+              height="40"
+              class="icon-menu"
+              xlink:href="./assets/image/sprite2.svg#icon-menu-open"
+            />
+          </svg>
+        </button>
+        <div class="menu-mobile-container" id="menu-mobile-container" data-menu>
+          <div class="navigation">
+            <nav class="nav-links">
+              <ul class="site-nav">
+                <li class="site-nav-items">
+                  <a class="links" href="./index.html"
+                    ><span class="studio">Студия</span>
+                  </a>
+                </li>
+                <li class="site-nav-items">
+                  <a class="links" href="./portfolio.html"
+                    ><span class="portfolio-studio">Портфолио</span>
+                  </a>
+                </li>
+                <li class="site-nav-items">
+                  <a class="links" href="#">
+                    <span class="contacts">Контакты</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="our-contacts">
+            <!-- email style -->
+            <a href="#" class="email--style">
+              <svg xmlns="http://www.w3.org/2000/svg" class="mail-icon-style">
+                <use xlink:href="./assets/image/sprite2.svg#icon-envelope1" />
+              </svg>
+              <span class="email-adderss-style">info@devstudio.com</span>
+            </a>
+            <!-- number style -->
+            <a href="#" class="number--style">
+              <svg xmlns="http://www.w3.org/2000/svg" class="number-icon-style">
+                <use xlink:href="./assets/image/sprite2.svg#icon-smartphone1" />
+              </svg>
+              <span class="phone-number-style">+38 096 111 11 11</span>
             </a>
           </div>
-          <button
-            type="button"
-            class="menu-button is-open"
-            aria-expanded="false"
-            data-menu-button
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="mobile-menu-button"
-              aria-label="menu switcher"
-            >
-              <use
-                width="24"
-                height="16"
-                class="icon-menu"
-                xlink:href="./assets/image/sprite2.svg#icon-menu-open"
-              />
-              <use
-                width="19"
-                height="19"
-                class="icon-close-menu"
-                xlink:href="./assets/image/sprite2.svg#icon-menu-close"
-              />
-            </svg>
-          </button>
-          <ul class="site-nav">
-            <li class="site-nav-items">
-              <a class="links studio" href="./index.html">Студия</a>
-            </li>
-            <li class="site-nav-items">
-              <a class="links portfolio-studio" href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="site-nav-items">
-              <a class="links contacts" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="our-contacts">
-          <!-- email style -->
-          <a href="#" class="email--style">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mail-icon-style">
-              <use xlink:href="./assets/image/sprite2.svg#icon-envelope1" />
-            </svg>
-            <span class="email-adderss-style">info@devstudio.com</span>
-          </a>
-          <!-- number style -->
-          <a href="#" class="number--style">
-            <svg xmlns="http://www.w3.org/2000/svg" class="number-icon-style">
-              <use xlink:href="./assets/image/sprite2.svg#icon-smartphone1" />
-            </svg>
-            <span class="phone-number-style">+38 096 111 11 11</span>
-          </a>
         </div>
       </div>
     </header>
