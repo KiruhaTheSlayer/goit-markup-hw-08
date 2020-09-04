@@ -1,25 +1,14 @@
 /* section first */
 .main-banner {
+  display: block;
   background-color: #212121;
-  max-width: 100%;
-  margin: auto;
+  max-width: 100%
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  @media screen and (max-width: 767px) {
-    background-image: url(/assets/image/headerimgmob.jpg);
-  }
-
-  @media screen and (min-width: 768px) {
-    background-image: url(/assets/image/Headerimgpads.jpg);
-  }
-
-  @media screen and (min-width: 1200px) {
-    background-image: url(/assets/image/HeaderImgdesct.jpg);
-  }
 }
+
 
 .title-container {
   display: flex;

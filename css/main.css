@@ -650,7 +650,7 @@ template {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -29px;
+  bottom: -30px;
   display: block;
   width: 100%;
   height: 5px;
@@ -672,7 +672,7 @@ template {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -29px;
+  bottom: -30px;
   display: block;
   width: 100%;
   height: 5px;
@@ -703,7 +703,7 @@ template {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -29px;
+  bottom: -30px;
   display: block;
   width: 100%;
   height: 5px;
@@ -725,7 +725,7 @@ template {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -29px;
+  bottom: -30px;
   display: block;
   width: 100%;
   height: 5px;
@@ -756,7 +756,7 @@ template {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -29px;
+  bottom: -30px;
   display: block;
   width: 100%;
   height: 5px;
@@ -910,9 +910,16 @@ template {
 
 /* section first */
 .main-banner {
+  display: block;
   background-color: #212121;
-  max-width: 100%;
-  margin: auto;
+  max-width: 1600px;
+  height: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.6)), to(rgba(47, 48, 58, 0.6))), url(/assets/image/headerimgmob.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.6)), url(/assets/image/headerimgmob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -920,19 +927,29 @@ template {
 
 @media screen and (max-width: 767px) {
   .main-banner {
-    background-image: url(/assets/image/headerimgmob.jpg);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .main-banner {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.6)), to(rgba(47, 48, 58, 0.6))), url(/assets/image/headerimgmob@2.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.6)), url(/assets/image/headerimgmob@2.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .main-banner {
-    background-image: url(/assets/image/Headerimgpads.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.6)), to(rgba(47, 48, 58, 0.6))), url(/assets/image/Headerimgpads.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.6)), url(/assets/image/Headerimgpads.jpg);
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .main-banner {
-    background-image: url(/assets/image/HeaderImgdesct.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(39, 46, 114, 0.6)), to(rgba(47, 48, 58, 0.6))), url(/assets/image/Headerpadsimg@2x.jpg);
+    background-image: linear-gradient(rgba(39, 46, 114, 0.6), rgba(47, 48, 58, 0.6)), url(/assets/image/Headerpadsimg@2x.jpg);
   }
 }
 
