@@ -35,6 +35,10 @@ $main-color-icons-fill-hover: #ffffff;
 }
 
 .card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   margin-left: auto;
   margin-right: auto;
 
@@ -46,16 +50,15 @@ $main-color-icons-fill-hover: #ffffff;
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    flex-wrap: wrap;
+
     justify-content: center;
   }
 }
 
 .card-list-item {
-  width: calc((100% - 30px) / 2);
-
-  display: flex;
   justify-content: center;
+
+  max-width: 450px;
 
   margin-bottom: 30px;
   margin-left: 30px;
@@ -64,36 +67,60 @@ $main-color-icons-fill-hover: #ffffff;
     margin-left: 0;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    width: 354px;
+
+    margin-left: 0;
     margin-bottom: 0;
   }
-}
 
-.card-list-item:nth-child(2n + 1) {
-  @media screen and (min-width: 768px) and (max-width: 869px) {
-    margin-left: 0;
+  @media screen and (min-width: 1122px) and (max-width: 1199px) {
+    display: block;
+    margin-left: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    display: flex;
+    width: 270px;
+  }
+}
+.card-list-item:nth-child(-n + 2) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-bottom: 30px;
+  }
+}
+.card-list-item:nth-child(2n) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-left: 30px;
   }
 }
 
-.card-list-item:nth-child(1) {
-  @media screen and (min-width: 870px) and (max-width: 1198px) {
-    margin-left: 0;
-  }
-}
-
-.card-list-item:nth-child(1) {
-  @media screen and (min-width: 1199px) {
-    margin-left: 0;
+.card-list-item:nth-last-child(-n + 3) {
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
   }
 }
 
 .figure-card {
-  width: 270px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 
   background-color: $figure-card-color;
+}
+
+.team-images {
+  max-width: 450px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .our-team-names {

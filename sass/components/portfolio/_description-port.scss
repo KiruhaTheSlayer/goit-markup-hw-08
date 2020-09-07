@@ -1,0 +1,120 @@
+$projects-dis-items-color: #ffffff;
+$projects-dis-items-border-color: #eeeeee;
+$portfolio-title-color: #212121;
+$portfolio-card-description-color: #757575;
+
+/* description */
+.projects-dis-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
+}
+
+.projects-dis-items {
+  position: relative;
+  overflow: hidden;
+
+  max-width: 370px;
+
+  margin-bottom: 30px;
+
+  background: $projects-dis-items-color;
+  border: 1px solid $projects-dis-items-border-color;
+
+  cursor: pointer;
+
+  transition: 250ms;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+    margin-left: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+.projects-dis-items:nth-child(2n + 1) {
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
+}
+
+.projects-dis-items:nth-child(3n + 1) {
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+  }
+}
+
+.projects-dis-items:nth-child(3),
+.projects-dis-items:nth-child(5),
+.projects-dis-items:nth-child(9) {
+  @media screen and (min-width: 1170px) {
+    margin-left: 30px;
+  }
+}
+
+.projects-dis-items:nth-child(9) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.projects-dis-items:nth-child(7),
+.projects-dis-items:nth-child(8) {
+  margin-bottom: 0;
+}
+
+.projects-dis-items:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.projects-dis-items img {
+  max-width: 100%;
+
+  display: block;
+  background-size: cover;
+}
+
+.tittle-projects-dis {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+
+  color: $portfolio-title-color;
+
+  margin-top: 20px;
+  padding: 0 24px 0;
+}
+
+.card-description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+
+  color: $portfolio-card-description-color;
+
+  margin-top: 4px;
+  margin-bottom: 20px;
+  padding: 0 24px 0;
+}

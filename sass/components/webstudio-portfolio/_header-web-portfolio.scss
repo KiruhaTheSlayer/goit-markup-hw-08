@@ -103,6 +103,8 @@ $email-number-color-icon-hover: #2196f3;
 
     &.is-open {
       display: block;
+
+      z-index: 999;
     }
   }
 
