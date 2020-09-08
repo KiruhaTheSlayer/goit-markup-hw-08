@@ -6,12 +6,6 @@
   margin-left: auto;
   margin-right: auto;
 
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.6),
-      rgba(47, 48, 58, 0.6)
-    ),
-    url(/assets/image/Headerimg.jpg);
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -71,6 +65,7 @@
       }
     }
   }
+
   @media screen and (min-width: 1200px) {
     max-width: 100%;
     height: 650px;
