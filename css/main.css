@@ -928,8 +928,7 @@ template {
 
 /* section first */
 .main-banner {
-  max-width: 1600px;
-  height: 400px;
+  max-width: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.6)), to(rgba(47, 48, 58, 0.6))), url(../image/headermobimg.png);
   background-image: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.6)), url(../image/headermobimg.png);
   background-repeat: no-repeat;
@@ -962,7 +961,6 @@ template {
   .main-banner {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.6)), to(rgba(47, 48, 58, 0.6))), url(../image/headertabletimg2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.6)), url(../image/headertabletimg2x.jpg);
-    width: 50%;
   }
 }
 
@@ -983,8 +981,8 @@ template {
 
 @media screen and (min-width: 1200px) {
   .main-banner {
-    max-width: 100%;
-    height: 650px;
+    width: 1600px;
+    height: 700px;
   }
 }
 
