@@ -929,7 +929,6 @@ template {
 /* section first */
 .main-banner {
   max-width: 1600px;
-  height: 400px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.6)), to(rgba(47, 48, 58, 0.6))), url("/assets/image/Headerimg.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.6)), url("/assets/image/Headerimg.jpg");
   background-repeat: no-repeat;
