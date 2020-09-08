@@ -6,6 +6,12 @@
   margin-left: auto;
   margin-right: auto;
 
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.6),
+      rgba(47, 48, 58, 0.6)
+    ),
+    url(/assets/image/Headerimg.jpg);
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -14,35 +20,13 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    & {
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.6),
-          rgba(47, 48, 58, 0.6)
-        ),
-        url(/assets/image/headerimgmob@2.jpg);
-    }
-  }
+
   @media screen and (min-width: 481px) and (max-width: 768px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.6),
         rgba(47, 48, 58, 0.6)
       ),
       url(/assets/image/Headerimgpads.jpg);
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      & {
-        background-image: linear-gradient(
-            rgba(47, 48, 58, 0.6),
-            rgba(47, 48, 58, 0.6)
-          ),
-          url(/assets/image/Headerpadsimg@2x.jpg);
-      }
-    }
   }
 
   @media screen and (min-width: 769px) {
@@ -52,18 +36,6 @@
       ),
       url(/assets/image/HeaderImgdesct.jpg);
     height: 400px;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      & {
-        background-image: linear-gradient(
-            rgba(47, 48, 58, 0.6),
-            rgba(47, 48, 58, 0.6)
-          ),
-          url(/assets/image/headerimg@2.jpg);
-      }
-    }
   }
 
   @media screen and (min-width: 1200px) {
