@@ -492,6 +492,7 @@ template {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  outline: none;
   margin: 0;
   padding: 0;
   border: none;
@@ -527,6 +528,7 @@ template {
 
 .mobile-menu-button:hover,
 :focus {
+  background-color: #ffffff;
   fill: #2196f3;
 }
 

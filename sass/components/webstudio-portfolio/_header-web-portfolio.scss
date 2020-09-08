@@ -43,6 +43,7 @@ $email-number-color-icon-hover: #2196f3;
 // mobile button
 .menu-button {
   align-self: center;
+  outline: none;
 
   margin: 0;
   padding: 0;
@@ -80,6 +81,7 @@ $email-number-color-icon-hover: #2196f3;
 
 .mobile-menu-button:hover,
 :focus {
+  background-color: #ffffff;
   fill: #2196f3;
 }
 
