@@ -640,6 +640,7 @@ template {
 .site-nav .links:focus,
 .site-nav .links:active {
   color: #2196f3;
+  background-color: #ffffff;
 }
 
 .links {
