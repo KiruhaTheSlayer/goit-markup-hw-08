@@ -1713,16 +1713,17 @@ form .form-button-style {
     display: -ms-flexbox;
     display: flex;
     width: 270px;
+    margin-bottom: 0;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .card-list-item:nth-child(-n + 2) {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .card-list-item:nth-child(2n) {
     margin-left: 30px;
   }

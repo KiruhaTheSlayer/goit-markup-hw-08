@@ -85,15 +85,16 @@ $main-color-icons-fill-hover: #ffffff;
     margin-bottom: 0;
     display: flex;
     width: 270px;
+    margin-bottom: 0;
   }
 }
 .card-list-item:nth-child(-n + 2) {
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 30px;
   }
 }
 .card-list-item:nth-child(2n) {
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: 30px;
   }
 }
