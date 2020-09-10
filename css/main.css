@@ -631,6 +631,14 @@ template {
   letter-spacing: 0.02em;
 }
 
+@media screen and (min-width: 1200px) {
+  .site-nav .links {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+  }
+}
+
 .site-nav .links {
   -webkit-transition: 250ms;
   transition: 250ms;
@@ -682,6 +690,12 @@ template {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .studio::after {
+    bottom: -33px;
+  }
+}
+
 .site-nav .site-nav-items .studio {
   color: #2196f3;
 }
@@ -712,6 +726,12 @@ template {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .studio-portfolio::after {
+    bottom: -33px;
+  }
+}
+
 .studio-portfolio:hover::after {
   -webkit-transform: scaleY(100%);
           transform: scaleY(100%);
@@ -732,6 +752,12 @@ template {
 @media screen and (max-width: 767px) {
   .portfolio::after {
     bottom: -12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio::after {
+    bottom: -33px;
   }
 }
 
@@ -765,6 +791,12 @@ template {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio-studio::after {
+    bottom: -33px;
+  }
+}
+
 .portfolio-studio:hover::after {
   -webkit-transform: scaleY(100%);
           transform: scaleY(100%);
@@ -793,6 +825,12 @@ template {
 @media screen and (max-width: 767px) {
   .contacts::after {
     bottom: -12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts::after {
+    bottom: -33px;
   }
 }
 
@@ -929,6 +967,8 @@ template {
 /* section first */
 .main-banner {
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.6)), to(rgba(47, 48, 58, 0.6))), url(../image/headermobimg.png);
   background-image: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.6)), url(../image/headermobimg.png);
   background-repeat: no-repeat;
@@ -981,7 +1021,7 @@ template {
 
 @media screen and (min-width: 1200px) {
   .main-banner {
-    width: 1600px;
+    width: 100%;
     height: 700px;
   }
 }
