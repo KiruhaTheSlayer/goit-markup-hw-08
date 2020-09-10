@@ -13,6 +13,10 @@ $email-number-color-icon-hover: #2196f3;
   position: relative;
 
   border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: 1200px) {
+    border: none;
+  }
 }
 
 .logo-style {
@@ -221,7 +225,7 @@ $email-number-color-icon-hover: #2196f3;
   }
 
   @media screen and (min-width: 1200px) {
-    bottom: -33px;
+    bottom: -32px;
   }
 }
 
@@ -253,7 +257,7 @@ $email-number-color-icon-hover: #2196f3;
   }
 
   @media screen and (min-width: 1200px) {
-    bottom: -33px;
+    bottom: -32px;
   }
 }
 
@@ -281,7 +285,7 @@ $email-number-color-icon-hover: #2196f3;
   }
 
   @media screen and (min-width: 1200px) {
-    bottom: -33px;
+    bottom: -32px;
   }
 }
 
@@ -313,7 +317,7 @@ $email-number-color-icon-hover: #2196f3;
   }
 
   @media screen and (min-width: 1200px) {
-    bottom: -33px;
+    bottom: -32px;
   }
 }
 .portfolio-studio:hover::after {
@@ -344,7 +348,7 @@ $email-number-color-icon-hover: #2196f3;
   }
 
   @media screen and (min-width: 1200px) {
-    bottom: -33px;
+    bottom: -32px;
   }
 }
 .contacts:hover::after {
